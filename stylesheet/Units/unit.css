@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+/* Start glopal rules */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --marg: 1.2rem;
+    --speed: .6s;
+    --main-color: #123;
+    --sacond: #ffffff;
+}
+
+body {
+    direction: rtl;
+    background-color: var(--main-color, #123);
+    font-family: 'cairo',sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* END */
+
+.container {
+        width: 75%;
+        height: 85vh;
+        background-color: var(--sacond, #fff);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%) ;
+        -webkit-transform:translate(-50%, -50%) ;
+        -moz-transform:translate(-50%, -50%) ;
+        -o-transform:translate(-50%, -50%) ;
+        -ms-transform:translate(-50%, -50%) ;
+        background-color: #777;
+        /* border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px; */
+        padding: 25px;
+}
+
+.container::before {
+    content: ' 100 نقطة';
+    font-size: 1.6rem;
+    color: var(--main-color, #123);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 30px;
+    width: 110px;
+    background-color: green;
+    top: 15px;
+    left: -50px;
+    border-radius: 12px 0 0 12px;
+    -webkit-border-radius: 12px 0 0 12px;
+    -moz-border-radius: 12px 0 0 12px;
+    -ms-border-radius: 12px 0 0 12px;
+    -o-border-radius: 12px 0 0 12px;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    border: 15px solid;
+    border-color: transparent #777 transparent transparent;
+    top: 15px;
+    left: 30px;
+}
+
+.section-intro {
+    width: 100%;
+    height:90%;
+    color: var(--sacond, #fff);
+    overflow: auto;
+}
+
+.section-intro  > h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.section-intro  > p {
+    line-height: 2.2;
+    font-size: 1.8rem;
+}
+
+.section-intro  > p:last-child {
+    margin-top: var(--marg, 1.2rem);
+}
+
+
+
+.intro-buttons {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.intro-buttons > a > button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: darkcyan;
+    border: none;
+    color: var(--sacond, #fff);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.intro-buttons > a > button  > i {
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.intro-buttons > a > button:hover  {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    border: 1px var(--sacond, #fff) solid;
+}
+
+.intro-buttons > a > button:hover > i {
+    color: var(--main-color, #123);
+}
+
+@media (max-width:767px) {
+    .container::before,
+    .container::after {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        border-radius: none ;
+        -webkit-border-radius: none ;
+        -moz-border-radius: none ;
+        -ms-border-radius: none ;
+        -o-border-radius: none ;
+}
+
+}
+@media (min-width:768px) and (max-width:1399px) {
+    .container {
+        width: 75%;
+        height: 85vh;
+        background-color: var(--sacond, #fff);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%) ;
+        -webkit-transform:translate(-50%, -50%) ;
+        -moz-transform:translate(-50%, -50%) ;
+        -o-transform:translate(-50%, -50%) ;
+        -ms-transform:translate(-50%, -50%) ;
+        background-color: #777;
+        /* border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px; */
+        padding: 25px;
+}
+}
+
+
+
+@media (min-width:1400px) {
+    .container {
+        width: 110rem;
+        height: 600px;
+        background-color: var(--sacond, #fff);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%) ;
+        -webkit-transform:translate(-50%, -50%) ;
+        -moz-transform:translate(-50%, -50%) ;
+        -o-transform:translate(-50%, -50%) ;
+        -ms-transform:translate(-50%, -50%) ;
+        background-color: #777;
+        /* border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px; */
+        padding: 25px;
+}
+}
+
+    /* Update version  */
+
+    .book {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #777;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+
+    }
+
+    .book > i {
+        transition: var(--speed, .6s);
+        -webkit-transition: var(--speed, .6s);
+        -moz-transition: var(--speed, .6s);
+        -ms-transition: var(--speed, .6s);
+        -o-transition: var(--speed, .6s);
+}
+
+    .book > i {
+        font-size: 2rem;
+        color: var(--sacond, #fff);
+    }
+
+    .book:hover > i {
+        color: #123;
+    }

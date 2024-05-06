@@ -1,0 +1,243 @@
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .container {
+        width: 536px;
+    }
+
+    .line::after {
+        left: 50%;
+        margin-left: -40%;
+}
+
+}
+
+
+@media (max-width:767px) {
+    video {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        padding:25px;
+    }
+
+    .services  a  i {
+        font-size: 3.5rem;
+    }
+
+    section > form > input {
+        width: 30rem;
+    }
+
+    .cont-srv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+        gap: 30px;
+        margin: 10px;
+    } 
+
+    .cont-srv .two {
+        width: 375px !important;
+        /* margin: auto; */
+
+    }
+
+    .list {
+        display: none;
+    }
+
+    .lista {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .lista:hover .icon > span:nth-child(2){
+        width: 100%;
+    }
+    
+    .lista:hover ul {
+        display: block;
+    }
+    
+    .lista > .icon {
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    .lista > .icon > span {
+        width: 100%;
+        height: 2px;
+        background-color: darkcyan;
+        margin-bottom: 5px ;
+    }
+    
+    .lista > .icon > span:first-child {
+        width: 100%;
+    }
+    
+    .lista > .icon > span:nth-child(2) {
+        width: 60%;
+        transition: .6s;
+        -webkit-transition: .6s;
+        -moz-transition: .6s;
+        -ms-transition: .6s;
+        -o-transition: .6s;
+    }
+    
+    .lista > .icon > span:last-child {
+        width: 100%;
+    }
+    
+    .lista > ul {
+        position: absolute;
+        top: calc(100% + 15px);
+        right: 0;
+        list-style: none;
+        background-color: darkcyan;
+        min-width: 200px;
+        padding: 0;
+        margin: 0;
+        display: none;
+        z-index: 100;
+    }
+    
+    .lista > ul::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 0;
+        border: 10px solid;
+        border-color: transparent transparent darkcyan transparent;
+    }
+    .lista > ul a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #000;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    
+    ul > li:not(:last-child) {
+        border-bottom: cadetblue 1px solid;
+    } 
+    
+    .lista > ul > li:hover a {
+        padding-left:  25px; 
+    }
+
+    .contact-me {
+        /* padding: 500px 0; */
+        text-align: center;
+    }
+    
+}
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)  {
+    .container {
+        width: 728px;
+        padding: 15px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+        gap: 30px;
+        padding:25px;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .lista {
+        display: none;
+    }
+
+    section > form > input {
+        width: 70rem;
+    }
+
+
+    .cont-srv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        padding:25px;
+    }
+}
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        width: 952px;
+        padding: 15px;
+    }
+
+    video {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+        gap: 30px;
+        padding:25px;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    .primuem {
+        display: none;
+    } 
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+    .container {
+        width: 1160px;
+        padding: 15px;
+    }
+    .cont .container{
+        width: 1600px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        padding:25px;
+    }
+}
+
+@media (min-aspect-ratio:16/9) {
+    video {
+        width: 100%;
+    }
+}

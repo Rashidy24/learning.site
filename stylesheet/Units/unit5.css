@@ -58,7 +58,7 @@ body {
 
 .container {
         width: 75%;
-        height: 100vh;
+        height: 85vh;
         background-color: var(--sacond, #fff);
         position: absolute;
         top: 50%;
@@ -288,7 +288,7 @@ ul > li >a {
         position: absolute;
         right: 50px;
         top: 50px;
-
+        z-index: 1000;
     }
 
     .book > i {

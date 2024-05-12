@@ -1261,3 +1261,377 @@ section .button button:hover {
     }
 
 }
+
+
+
+
+
+
+/*  */
+.css3 {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    background-color: #fff4a3;
+}
+
+.css3 .css {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.css3 .css span {
+    font-size: 10rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--Col);
+    font-family: saden;
+}
+
+.css3 .css p {
+    margin-top: 12px;
+    font-size: 1.7rem;
+    color: #06b733;
+}
+
+.css3 .css button:first-of-type {
+    margin-top: 40px;
+    background-color: #52b875 ;
+    color: #fff !important;
+}
+
+.css3 .css button:nth-of-type(2) {
+    background-color: #123;
+    color: #fff;
+}
+
+.css3 .css button:nth-of-type(3) {
+    background-color: #ffb3bb;
+    color: #fff !important;
+}
+
+.css3 .css button {
+    margin: 12px;
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--Col);
+    opacity: .8;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.css3 .css button:hover,
+.cssImg button:hover {
+    opacity: 1;
+}
+
+.cssImg {
+    position: relative;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #e7e9eb;
+    margin: auto;
+    box-shadow: 0px 0px 10px #123;
+}
+
+.cssImg::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: darkcyan;
+}
+
+.cssImg  .div {
+    position: relative;
+    width: 400px;
+}
+
+.cssImg  .div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: darkcyan;
+}
+.cssImg  span {
+    font-size: 3rem;
+    color: var(--Col);
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: saden;
+}
+
+.cssImg button {
+    margin: 12px;
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: .8;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    background-color: #52b875;
+}
+
+@media (max-width:990px) {
+    .css3 {
+        flex-direction: column;
+    }
+
+    .css3 .css  {
+        width: 100%;
+    }
+
+    .cssImg {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .cssImg .div {
+        position: relative;
+        width: 500px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .css3 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .css3 .css  {
+        width: 100%;
+    }
+
+    .cssImg {
+        width: 100%;
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .cssImg .div {
+        position: relative;
+        width: 350px;
+    }
+
+}
+
+/*  */
+
+.js6 {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    background-color: #282a35;
+}
+
+.js6 .js {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.js6 .js  span {
+    font-size: 8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: saden;
+}
+
+.js6 .js p {
+    margin-top: 12px;
+    font-size: 1.7rem;
+    color: #06b733;
+}
+
+.js6 .js  button:first-of-type {
+    margin-top: 40px;
+    background-color: #52b875 ;
+    color: #fff !important;
+}
+
+.js6 .js  button:nth-of-type(2) {
+    background-color: #fff4a3;
+}
+
+.js6 .js  button:nth-of-type(3) {
+    background-color: #ffb3bb;
+    color: #fff !important;
+}
+
+.js6 .js  button {
+    margin: 12px;
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--Col);
+    opacity: .8;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.js6 .js  button:hover,
+.jsImg button:hover {
+    opacity: 1;
+}
+
+.jsImg {
+    position: relative;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #e7e9eb;
+    margin: auto;
+    box-shadow: 0px 0px 10px #ff0;
+}
+
+.jsImg ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: darkcyan;
+}
+
+.jsImg   .div {
+    position: relative;
+    width: 400px;
+}
+
+.jsImg   .div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: darkcyan;
+}
+
+.jsImg  span {
+    font-size: 3rem;
+    color: var(--Col);
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: saden;
+}
+
+.jsImg button {
+    margin: 12px;
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: .8;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    background-color: #52b875;
+}
+
+@media (max-width:990px) {
+    .js6 {
+        flex-direction: column;
+    }
+
+    .js6 .js   {
+        width: 100%;
+    }
+
+    .jsImg {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .jsImg  .div {
+        position: relative;
+        width: 500px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .js6 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .js6 .js  {
+        width: 100%;
+    }
+
+    .jsImg {
+        width: 100%;
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .jsImg .div {
+        position: relative;
+        width: 350px;
+    }
+
+}

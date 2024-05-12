@@ -26,10 +26,12 @@
     <!--  -->
 
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body>     
 
+    <div class="up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
 <div class="contain">
     <header>
         <nav>
@@ -39,7 +41,7 @@
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#serv">services</a></li>
-                <li><a href="#">latest</a></li>
+                <li><a href="#latest">latest</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
             <div class="box">
@@ -189,11 +191,61 @@
     </div>
 </div>
 
-
+<div class="container">
+    <div class="copilot" id="latest">
+        <div class="play co1">
+            <div class="bg-purple-800"></div>
+            <h1> first feature</h1>
+            <p>this is the discription of the first feature of iur app we are going to brifly outline what this feature does</p>
+            <button class="bg-purple-800 center"> enroll</button>
+        </div>
+    
+        <div class="play co2">
+            <div class="bg-orange-800"></div>
+            <h1> first feature</h1>
+            <p>this is the discription of the first feature of iur app we are going to brifly outline what this feature does</p>
+            <button class="bg-orange-800 center"> enroll</button>
+        </div>
+    
+        <div class="play co3">
+            <div class="bg-lime-900"></div>
+            <h1> first feature</h1>
+            <p>this is the discription of the first feature of iur app we are going to brifly outline what this feature does</p>
+            <button class="bg-lime-900 center"> enroll</button>
+        </div>
+    
+        <div class="play co4 ">
+            <div class="bg-sky-900"></div>
+            <h1> first feature</h1>
+            <p>this is the discription of the first feature of iur app we are going to brifly outline what this feature does</p>
+            <button class="bg-sky-900 center"> enroll</button>
+        </div>
+    </div>
+</div>
 
 
 
         <!-- (stylesheet file) master.css (main).file -->
         <link rel="stylesheet" href="stylesheet/master.css">
+
+        <!-- script -->
+        <script>
+            let span = document.querySelector('.up')
+            window.onscroll = function () {
+                if (this.scrollY >= 500) {
+                    span.classList.add('show');
+                } else {
+                    span.classList.remove('show');
+                }           
+             }
+
+             span.onclick = function () {
+                window.scrollTo ({
+                    top: 0 ,
+                    behavior: "smooth" ,
+                })
+             }
+ 
+        </script>
 </body>
 </html>

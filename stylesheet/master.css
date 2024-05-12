@@ -1634,4 +1634,12 @@ section .button button:hover {
         width: 350px;
     }
 
+    .js6 .js  span  {
+        font-size: 5rem;
+    }
+
+    .js6 .js  p  {
+        text-align: center;
+    }
+
 }

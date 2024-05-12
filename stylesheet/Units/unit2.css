@@ -316,3 +316,19 @@ p {
     .book:hover > i {
         color: #123;
     }
+
+    @media (max-width:767px) {
+        .book {
+            background-color: transparent;
+            right: 0;
+        }
+
+        .book i {
+            color: #123;
+            font-size: 3rem;
+        }
+
+        .book:hover > i {
+            color: #fff;
+        }
+    }

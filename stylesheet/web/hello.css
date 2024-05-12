@@ -49,6 +49,10 @@ body {
     padding: 25px;
 }
 
+.icon {
+    margin: 0 auto;
+}
+
 @media (max-width:767px) {
     .line .logo {
         display: none;
@@ -189,6 +193,26 @@ body {
     display: flex;
     padding: 25px;
     /* min-height: 1000px; */
+}
+
+@media (max-width:767px) { 
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) { 
+    .container {
+        margin: 0;
+    }
+
+    .icon input {
+        width: 100%;
+    }
+
+    .line {
+        padding: 0;
+    }
 }
 
 @media (min-width:1300px) {

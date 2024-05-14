@@ -27,12 +27,14 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<!-- oncontextmenu="return false" -->
 <body>     
 
     <div class="up">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
-<div class="contain">
+
+    <div class="contain">
     <header>
         <nav>
             <div class="logo">
@@ -42,7 +44,7 @@
                 <li><a href="#home">home</a></li>
                 <li><a href="#serv">services</a></li>
                 <li><a href="#latest">latest</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
             <div class="box">
                 <input type="checkbox" id="checked">
@@ -78,9 +80,9 @@
             </a>
         </div>
     </header>
-</div>
+    </div>
 
-<section id="home">
+    <section id="home">
 
         <h1>search your course</h1>
         <form action="">
@@ -101,13 +103,13 @@
             <div></div>
             <div></div>
         </div>
-</section>
+    </section>
 
-<div class="servSec center" id="serv">
+    <div class="servSec center" id="serv">
     <h1>our services</h1>
-</div>
+    </div>
 
-<div class="container" >
+    <div class="container" >
     <div class="cont-srv">
         <a href="pages/web developer/web.html" class="none">
             <div class="two">
@@ -157,7 +159,7 @@
                     Therefore</p>
             </div>
     </div>
-</div>
+    </div>
 
 
 
@@ -197,7 +199,7 @@
     </div>
 
 
-<div class="container">
+    <div class="container">
     <div class="copilot" id="latest">
         <div class="play co1">
             <div class="bg-purple-800"></div>
@@ -227,9 +229,9 @@
             <button class="bg-sky-900 center"> enroll</button>
         </div>
     </div>
-</div>
+    </div>
 
-<div class="glopal-item marg-top" id="html">
+    <div class="glopal-item marg-top" id="html">
     <div class="glopal">
         <span>html</span>
         <p>The language for building web pages</p>
@@ -245,10 +247,10 @@
         </div>
         <button>try it yourself</button>
     </div>
-</div>
+    </div>
 
 
-<div class="glopal-item css3" id="css323">
+    <div class="glopal-item css3" id="css323">
     <div class="glopal">
         <span>css</span>
         <p>The language for styling web pages</p>
@@ -264,9 +266,9 @@
         </div>
         <button>try it yourself</button>
     </div>
-</div>
+    </div>
 
-<div class="glopal-item js6" id="js">
+    <div class="glopal-item js6" id="js">
     <div class="glopal">
         <span>javascript</span>
         <p>The language for programming web pages</p>
@@ -282,9 +284,9 @@
         </div>
         <button>try it yourself</button>
     </div>
-</div>
+    </div>
 
-<div class="glopal-item boot5" id="bootstrap">
+    <div class="glopal-item boot5" id="bootstrap">
     <div class="glopal">
         <span>bootstrap</span>
         <p>The language for programming web pages</p>
@@ -300,8 +302,18 @@
         </div>
         <button>try it yourself</button>
     </div>
-</div>
+    </div>
 
+    <div class="contact-us" id="contact">
+        <div class="contact-box">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="last Name">
+                <input type="email" placeholder="Email">
+
+                    <textarea name="" id=""  rows="8"></textarea>
+                <input type="button" value="Send" class="center">
+        </div>
+    </div>
         <!-- (stylesheet file) master.css (main).file -->
         <link rel="stylesheet" href="stylesheet/master.css">
         <!-- script -->

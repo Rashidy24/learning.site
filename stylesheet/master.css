@@ -23,6 +23,7 @@ html {
 body {
     font-family: 'poppins', sans-serif;
     background-color: var(--Bgc);
+    user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -1254,3 +1255,154 @@ section .button button:hover {
 }
 
 /*  */
+
+
+.contact-us {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 20px 10px rgba(255, 255, 255,.1);
+    border-top: 1px solid  rgba(255, 255, 255,.50) ;
+    border-left: 1px solid  rgba(255, 255, 255,.50);
+    overflow: hidden;
+    margin: 60px auto;
+}
+
+.contact-us::before {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: darkcyan;
+    z-index: -1;
+}
+
+.contact-us::after{
+    position: absolute;
+    content: '';
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: darkcyan;
+    z-index: -1;
+}
+
+.contact-us > .contact-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: rgba(1, 2, 3, .25);
+    padding: 25px;
+    z-index: 1000;
+    width: 40%;
+    height: 400px;
+}
+
+.contact-us > .contact-box  input[placeholder="First Name"] {
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 12px 5px 0 0;
+    outline: none;
+    border: 1px var(--Color) solid;
+    background-color: var(--Bgc);
+    color: #fff;
+}
+
+.contact-us > .contact-box   input[placeholder="last Name"] {
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 12px 0 0 0;
+    outline: none;
+    border: 1px var(--Color) solid;
+    background-color: var(--Bgc);
+    color: #fff;
+}
+
+
+
+.contact-us > .contact-box  input[placeholder="Email"] {
+    width: 100%;
+    height: 35px;
+    margin-top: 12px;
+    outline: none;
+    border: 1px var(--Color) solid;
+    background-color: var(--Bgc);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.contact-us > .contact-box  textarea {
+    width: 100%;
+    margin-top: 12px;
+    max-height: 150px;
+    outline: none;
+    border: 1px var(--Color) solid;
+    background-color: var(--Bgc);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact-us > .contact-box  input[ value="Send"] {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 120px;
+    height: 35px;
+    margin-top: 12px;
+    outline: none;
+    border: 1px var(--Color) solid;
+    background-color: var(--Bgc);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width:991px) {
+    .contact-us > .contact-box {
+        width: 951px;
+    }
+}
+
+@media (min-width:768px) and (max-width:990px) {
+    .contact-us > .contact-box {
+        width: 740px;
+    }
+}
+
+@media (max-width:767px) {
+    .contact-us > .contact-box {
+        width: 300px;
+    }
+}

@@ -304,36 +304,23 @@
     </div>
     </div>
 
-    <div class="contact-us" id="contact">
-        <div class="contact-box">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="last Name">
-                <input type="email" placeholder="Email">
+    <div class="contact-us relative w-full overflow-hidden my-24 mx-auto" id="contact">
+        <div class="contact-box flex flex-col absolute top-1/2 left-1/2 p-[25px] z-10">
+                <input type="text" placeholder="First Name" class="w-full p-[15px] text-[12px] font-medium mt-[12px] mx-0 mb-0 outline-none text-white h-[35px]">
+                <input type="text" placeholder="last Name" class="w-full p-[15px] text-[12px] font-medium mt-[12px] mx-0 mb-0 outline-none text-white h-[35px]">
+                <input type="email" placeholder="Email" class="w-full p-[15px] text-[12px] font-medium mt-[12px] mx-0 mb-0 outline-none text-white h-[35px]">
 
-                    <textarea name="" id=""  rows="8"></textarea>
-                <input type="button" value="Send" class="center">
+                <textarea name="" id=""  rows="8" class="w-full mt-[12px] max-h-[150px] outline-none text-white p-[15px] text-[12px] font-medium  "></textarea>
+                <input type="button" value="Send" class="center absolute bottom-[20px] left-1/2 w-[120px] h-[35px] mt-[12px] outline-none text-white text-[15px] font-medium cursor-pointer">
         </div>
     </div>
+
+    <footer>
+
+    </footer>
         <!-- (stylesheet file) master.css (main).file -->
         <link rel="stylesheet" href="stylesheet/master.css">
         <!-- script -->
-        <script>
-            let span = document.querySelector('.up')
-            window.onscroll = function () {
-                if (this.scrollY >= 500) {
-                    span.classList.add('show');
-                } else {
-                    span.classList.remove('show');
-                }           
-             }
-
-             span.onclick = function () {
-                window.scrollTo ({
-                    top: 0 ,
-                    behavior: "smooth" ,
-                })
-             }
- 
-        </script>
+        <script src="js/config.js"></script>
 </body>
 </html>

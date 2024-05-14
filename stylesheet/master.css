@@ -852,7 +852,6 @@ section .button button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-
 }
 
 @media (min-width:1200px) {
@@ -1258,16 +1257,16 @@ section .button button:hover {
 
 
 .contact-us {
-    position: relative;
     height: 85vh;
-    width: 100%;
     background-color: rgba(255, 255, 255, .25);
     backdrop-filter: blur(25px);
     box-shadow: 0 20px 10px rgba(255, 255, 255,.1);
     border-top: 1px solid  rgba(255, 255, 255,.50) ;
     border-left: 1px solid  rgba(255, 255, 255,.50);
-    overflow: hidden;
-    margin: 60px auto;
+    /* position: relative; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+    /* margin: 60px auto; */
 }
 
 .contact-us::before {
@@ -1293,97 +1292,68 @@ section .button button:hover {
 }
 
 .contact-us > .contact-box {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     background-color: rgba(1, 2, 3, .25);
-    padding: 25px;
-    z-index: 1000;
     width: 40%;
     height: 400px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* padding: 25px; */
+    /* z-index: 1000; */
 }
 
-.contact-us > .contact-box  input[placeholder="First Name"] {
-    width: 100%;
-    height: 35px;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 12px 5px 0 0;
-    outline: none;
-    border: 1px var(--Color) solid;
-    background-color: var(--Bgc);
-    color: #fff;
-}
-
-.contact-us > .contact-box   input[placeholder="last Name"] {
-    width: 100%;
-    height: 35px;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 12px 0 0 0;
-    outline: none;
-    border: 1px var(--Color) solid;
-    background-color: var(--Bgc);
-    color: #fff;
-}
-
-
-
-.contact-us > .contact-box  input[placeholder="Email"] {
-    width: 100%;
-    height: 35px;
-    margin-top: 12px;
-    outline: none;
-    border: 1px var(--Color) solid;
-    background-color: var(--Bgc);
-    color: #fff;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-
+.contact-us > .contact-box  input[placeholder="First Name"],
+.contact-us > .contact-box   input[placeholder="last Name"],
+.contact-us > .contact-box  input[placeholder="Email"],
+.contact-us > .contact-box  input[ value="Send"],
 .contact-us > .contact-box  textarea {
+    border: 1px var(--Color) solid;
+    background-color: var(--Bgc);
+    /* height: 35px; */
+    /* width: 100%; */
+    /* padding: 15px; */
+    /* font-size: 1.2rem; */
+    /* font-weight: 500; */
+    /* margin: 12px 0 0 0; */
+    /* outline: none; */
+    /* color: #fff; */
+}
+
+/* .contact-us > .contact-box  textarea {
     width: 100%;
     margin-top: 12px;
     max-height: 150px;
     outline: none;
-    border: 1px var(--Color) solid;
-    background-color: var(--Bgc);
     color: #fff;
     padding: 15px;
     font-size: 1.2rem;
     font-weight: 500;
-}
+} */
 
 .contact-us > .contact-box  input[ value="Send"] {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
     transform: translate(-50%, 0);
-    width: 120px;
-    height: 35px;
-    margin-top: 12px;
-    outline: none;
-    border: 1px var(--Color) solid;
-    background-color: var(--Bgc);
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 500;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
-    cursor: pointer;
+    /* position: absolute; */
+    /* bottom: 20px; */
+    /* left: 50%; */
+    /* width: 120px; */
+    /* height: 35px; */
+    /* margin-top: 12px; */
+    /* outline: none; */
+    /* color: #fff; */
+    /* font-size: 1.5rem; */
+    /* font-weight: 500; */
+    /* cursor: pointer; */
 }
 
 
@@ -1406,3 +1376,5 @@ section .button button:hover {
         width: 300px;
     }
 }
+
+/*  */

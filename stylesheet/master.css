@@ -1378,3 +1378,151 @@ section .button button:hover {
 }
 
 /*  */
+
+
+.bg-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 25px;
+    */background: linear-gradient(to left, #577B8D, #57A6A1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.bg-header:hover> span{
+    background-color: gold;
+}
+
+.bg-header > span {
+    margin: 0;
+    height: 50px;
+    background-color: #fff;
+    width: 2px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.bg-header > div {
+    position: relative;
+    font-size: 1.8rem;
+    color: var(--Col);
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 120px;
+    height: 100%;
+}
+
+.bg-header > div > span {
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    font-family: saden;
+}
+
+.bg-header > div >span:hover {
+    text-shadow: 0 0 20px cyan;
+    cursor: pointer;
+    color: #fff;
+}
+
+.div1 > ul,
+.div2 > ul,
+.div3 > ul {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    background-color: darkcyan;
+    width: 370px;
+    display: none;
+}
+
+.div1 > ul li,
+.div2 > ul li,
+.div3 > ul li  {
+    padding: 10px;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.div1 > ul li a ,
+.div2 > ul li a ,
+.div3 > ul li a  {
+    height: 35px;
+    margin-left: 12px;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    display: flex;
+    align-items: center;
+}
+
+.div1 > ul li a:hover ,
+.div2 > ul li a:hover ,
+.div3 > ul li a:hover {
+    color: var(--Col);
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.div1 > ul li:hover a ,
+.div2 > ul li:hover a ,
+.div3 > ul li:hover a {
+    margin-left: 25px;
+    color: var(--Col);
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.div1 > ul li:hover ,
+.div2 > ul li:hover ,
+.div3 > ul li:hover {
+    background-color: rgba(1, 2, 3, .5);
+}
+
+.div1 > ul a ,
+.div2 > ul a ,
+.div3 > ul a{
+    display: block;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.div1 > ul li:not(:last-child) ,
+.div2 > ul li:not(:last-child) ,
+.div3 > ul li:not(:last-child)  {
+    border-bottom: 1px cyan solid;
+}
+
+.div1 > ul li:first-child ,
+.div2 > ul li:first-child ,
+.div3 > ul li:first-child {
+    border-top: 1px cyan solid;
+}
+
+.div1:hover ul ,
+.div2:hover > ul,
+.div3:hover > ul  {
+    display: block;
+}
+
+.div3 > ul {
+    left: -250px;
+}
+
+.div2 > ul {
+    left: -125px;
+}

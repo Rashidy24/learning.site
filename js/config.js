@@ -13,3 +13,9 @@ window.onscroll = function () {
         behavior: "smooth" ,
     })
  }
+
+//  var block = document.getElementById('ul'),
+//     nien = document.getElementById('l');
+//  block.onclick = function(){
+//     nien.style.display="block"   
+//  }

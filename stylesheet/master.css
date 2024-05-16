@@ -135,13 +135,8 @@ header {
     height: 85vh;
     width: 90%;
     background-color: rgba(255, 255, 255, .25);
-    backdrop-filter: blur(5px);
-    margin:auto;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+
+    margin:auto;;
     box-shadow: 0 20px 10px rgba(255, 255, 255,.1);
     border-top: 1px solid  rgba(255, 255, 255,.50) ;
     border-left: 1px solid  rgba(255, 255, 255,.50);
@@ -322,12 +317,27 @@ header > nav ul li > a {
         display: none
     }
 }
+
+@media (min-width:451px)  {
+    header {
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+}
+}
     
 @media (max-width:450px) {
     header {
         width: 100%;
-        height: 100vh
-    }
+        height: 100vh;
+        border-radius: none !important;
+        -webkit-border-radius: none !important;
+        -moz-border-radius: none !important;
+        -ms-border-radius: none !important;
+        -o-border-radius: none !important;
+}
 
     header > nav ul li {
         margin: 0 5px
@@ -1033,7 +1043,7 @@ section .button button:hover {
     padding: 25px;
     width: 100%;
     display: flex;
-    background-color: #d9eee1;
+    background-color: #F8F4E1;
 }
 
 .glopal-item  .glopal {
@@ -1214,7 +1224,7 @@ section .button button:hover {
 
 /*  */
 .css3 {
-    background-color: #fff4a3;
+    background-color: #FF8A08;
 }
 
 .css3 .glopal button:nth-of-type(2) {
@@ -1226,7 +1236,7 @@ section .button button:hover {
 /*  */
 
 .js6 {
-    background-color: #282a35;
+    background-color: #CDE8E5;
 }
 
 
@@ -1250,14 +1260,14 @@ section .button button:hover {
 } 
 
 .boot5 {
-    background-color: #6b21a8;
+    background-color: #C73659;
 }
 
 /*  */
 
 
 .contact-us {
-    height: 85vh;
+    height: 100vh;
     background-color: rgba(255, 255, 255, .25);
     backdrop-filter: blur(25px);
     box-shadow: 0 20px 10px rgba(255, 255, 255,.1);
@@ -1384,11 +1394,11 @@ section .button button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*padding: 25px;
-    */background: linear-gradient(to left, #577B8D, #57A6A1);
+    background: linear-gradient(to left,  #57A6A1 , #577B8D, #57A6A1);
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
 }
 
 .bg-header:hover> span{
@@ -1439,10 +1449,19 @@ section .button button:hover {
     top: calc(100% + 15px);
     left: 0;
     background-color: darkcyan;
-    width: 370px;
+    width: 375px;
     display: none;
+    z-index: 20000;
 }
 
+@media (max-width:767px) {
+    .div2 > ul {
+        left: -128px !important;
+    }
+    .div3 > ul {
+        left: -255px !important;
+    }    
+}
 .div1 > ul li,
 .div2 > ul li,
 .div3 > ul li  {
@@ -1525,4 +1544,130 @@ section .button button:hover {
 
 .div2 > ul {
     left: -125px;
+}
+
+
+.content-content {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-box {
+    position: relative;
+    background-color: rgba(255, 255, 255, .25);
+    width: 450px;
+    height: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px;
+}
+
+.content-box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    top: -5px;
+    background: darkcyan;
+    animation: idea 10s infinite linear;
+    -webkit-animation: idea 10s infinite linear;
+}
+
+.content-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: -5px;
+    background: darkseagreen;
+    animation: idea 10s infinite linear;
+    -webkit-animation: idea 10s infinite linear;
+}
+
+
+.content-box  > .b > span {
+    font-family: saden;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.content-box  > .b > p {
+    font-family: saden;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #123;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+
+.content-box  > button {
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background-color: rgba(1, 2, 3, .70);
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    font-size: 1.7rem;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    text-transform: capitalize;
+}
+
+
+.content-box  > button:hover {
+    background-color: #123;
+}
+
+@media (max-width:990px) {
+    .content-content {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width:450px) {
+    .content-content {
+        flex-direction: column;
+    }
+    .content-box {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: 17px !important;
+    }
+
+} 
+
+footer {
+    background-color: darkcyan;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+footer > span {
+    margin-left:10px ;
 }

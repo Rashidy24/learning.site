@@ -14,10 +14,13 @@ html {
 }
 
 :root {
-    --Bgc: #007F73;
+    --clp: #777;
+    --book: rgba(17, 25, 40, 0.75);
+    --Bgc: #344C64;
     --mainColor: #337357 ;
     --Color: #114232;
     --Col:#1C1678
+    /* #007F73 */
 }
 
 body {
@@ -51,26 +54,6 @@ body {
     background-color: var(--Bgc, #007F73);
     display: flex;
     align-items: center
-}
-
-.contain::before,
-.contain::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    opacity: .4
-}
-
-.contain::before {
-    clip-path: circle(30% at left 20%);
-    background: linear-gradient(135deg, var(--mainColor) 10% , var(--Color) 100%) 
-}
-.contain::after {
-    clip-path: circle(25% at right 80%);
-    background: linear-gradient(135deg, var(--mainColor) 10% , var(--Color) 100%) 
 }
 
 
@@ -135,7 +118,6 @@ header {
     height: 85vh;
     width: 90%;
     background-color: rgba(255, 255, 255, .25);
-
     margin:auto;;
     box-shadow: 0 20px 10px rgba(255, 255, 255,.1);
     border-top: 1px solid  rgba(255, 255, 255,.50) ;
@@ -507,7 +489,7 @@ header > nav ul li > a {
 section {
     /* background-image: url(/images/1686344516_en-idei-club-p-simple-background-design-dizain-pinterest-1.jpg);
     background-size: cover; */
-    background: linear-gradient(45deg, #508D69 ,#A1EEBD , #61A3BA);
+    background: linear-gradient(45deg,  #61A3BA ,#7D9D9C , #DBE2EF );
     height: 100vh;
     width: 100%;
     display: flex;
@@ -642,11 +624,11 @@ section  form  input:focus {
     outline: none;
 }
 
-section .button {
+section .false {
     margin-top: 3rem;
 }
 
-section .button  button {
+section .false  .true {
     width:120px;
     height: 45px;
     background-color: #06b733;
@@ -663,7 +645,7 @@ section .button  button {
     -o-transition: .6s;
 }
 
-section .button button:hover {
+section .false .true:hover {
     animation: move infinite 2s linear;
     -webkit-animation: move infinite 2s linear;
 
@@ -680,10 +662,11 @@ section .button button:hover {
     /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
     gap: 20px;
     padding:25px;
+    /* background-color: var(--Bgc); */
 } 
 
 .cont-srv .two {
-    background-color: rgba(1, 2, 3, .25);
+    background-color: #123;
     height: 25rem;
     text-align: center;
     display: flex;
@@ -873,7 +856,7 @@ section .button button:hover {
 .fundman .boxe {
     position: relative;
     width: 100%;
-    background-color: var(--Bgc);
+    background-color: var(--book);
     transition: .6s;
     -webkit-transition: .6s;
     -moz-transition: .6s;
@@ -930,7 +913,7 @@ section .button button:hover {
 
 .copilot .play {
     position: relative;
-    background-color: rgba(255, 255, 255, .25);
+    background-color: var(--book);
     height: 350px;
     border-radius: 0 25px 0;
     -webkit-border-radius: 0 25px 0;
@@ -938,8 +921,8 @@ section .button button:hover {
     -ms-border-radius: 0 25px 0;
     -o-border-radius: 0 25px 0;
     box-shadow: 0 20px 10px rgba(255, 255, 255,.1);
-    border-top: 1px solid  rgba(255, 255, 255,.50) ;
-    border-left: 1px solid  rgba(255, 255, 255,.50);
+    border-top: 1px solid  #123;
+    border-left: 1px solid  #123;
     padding: 25px;
     cursor: pointer;
     transition: .6s;
@@ -1286,7 +1269,7 @@ section .button button:hover {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: darkcyan;
+    background: linear-gradient(to left,  #57A6A1 , #577B8D, #57A6A1 );
     z-index: -1;
 }
 
@@ -1297,7 +1280,7 @@ section .button button:hover {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: darkcyan;
+    background: linear-gradient(to left,  #57A6A1 , #577B8D, #57A6A1 );
     z-index: -1;
 }
 
@@ -1307,7 +1290,7 @@ section .button button:hover {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    background-color: rgba(1, 2, 3, .25);
+    background-color: var(--book);
     width: 40%;
     height: 400px;
     /* display: flex; */
@@ -1394,12 +1377,13 @@ section .button button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left,  #57A6A1 , #577B8D, #57A6A1);
+    background: linear-gradient(to left,  #57A6A1 , #577B8D, #57A6A1 );
     position: sticky;
     top: 0;
     z-index: 10;
     width: 100%;
 }
+
 
 .bg-header:hover> span{
     background-color: gold;
@@ -1656,18 +1640,244 @@ section .button button:hover {
     }
 
 } 
-
-footer {
-    background-color: darkcyan;
-    height: 80px;
+/*  */
+/* .button.http {
+    width: fit-content;
     display: flex;
-    justify-content: center;
+    padding: 1.2em 1rem;
+    cursor: pointer;
+    gap: 0.4rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+    background-size: 300%;
+    color: #fff;
+    border: none;
+    background-position: left center;
+    box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+    transition: background .3s ease;
+  }
+  
+  .button:hover {
+    background-size: 320%;
+    background-position: right center;
+  }
+  
+  .button:hover svg {
+    fill: #fff;
+  }
+  
+  .button svg {
+    width: 23px;
+    fill: #f09f33;
+    transition: .3s ease;
+  } */
+
+  /*  */
+
+  footer {
+    width: 100%;
+    background-color:#07141c;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  footer .in-first {
+    display: flex;
+    /* justify-content: space-between; */
     align-items: center;
-    font-size: 25px;
-    font-weight: 800;
-    text-transform: capitalize;
+  }
+
+  footer .in-first .element-bar,
+  footer .in-first .element-med {
+    width: 30%;
+  }
+
+  footer .in-first .element-bar > span,
+  footer .in-first .element-med > span {
+        color: var(--mainColor);
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: saden;
+        text-transform: capitalize;
+  }
+
+  footer .in-first .element-bar  p:first-child,
+  footer .in-first .element-med  p:first-child {
+    margin-top: 20px;
+  }
+
+  footer .in-first .element-bar  p,
+  footer .in-first .element-med p {
+        color: var(--clp, #777);
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin: 12px 0;
 }
 
-footer > span {
-    margin-left:10px ;
+
+  footer .in-first .element-bar  p:hover,
+  footer .in-first .element-med p:hover {
+    text-decoration: underline;
+  }
+  footer .in-first .element-important-lay {
+    width: calc( 100% - (30% + 30%));
+  }
+
+  footer .in-first .element-important-lay .logo-img {
+    width: 100%;
+  }
+  footer .in-first .element-important-lay .logo-img > img {
+    width: 100px;
+    margin-left: 10%;
+}
+
+footer .in-first .element-important-lay .text-var {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--clp, #777);
+    font-weight: 500;
+  }
+
+footer .in-first .element-important-lay .element-btn {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  footer .in-first .element-important-lay .element-btn {
+    display: flex;
+  }
+
+footer .in-first .element-important-lay .element-btn > input{
+    width: 250px;
+    height: 40px;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    -webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    -ms-border-radius: 8px 0 0 8px;
+    -o-border-radius: 8px 0 0 8px;
+}
+
+footer .in-first .element-important-lay .element-btn > button{
+    width: 150px;
+    background-color: #fff;
+    height: 40px;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #57c3f0;
+    border-radius:  0 8px 8px 0;
+    -webkit-border-radius:  0 8px 8px 0;
+    -moz-border-radius:  0 8px 8px 0;
+    -ms-border-radius:  0 8px 8px 0;
+    -o-border-radius:  0 8px 8px 0;
+}
+
+.on-en {
+    margin: 30px 0;
+}
+
+.on-en span {
+    color: var(--clp, #777);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+hr {
+    border: 1px #777 dashed;
+}
+
+.in-fin {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-fin .left {
+    color: wheat;
+    font-size: 1.7rem;
+}
+
+.right i {
+    margin: 0 8px;
+    font-size: 3rem;
+}
+
+.right i[class="fa-brands fa-github"]{
+    color: #fff;
+}
+.right i[class="fa-brands fa-facebook"] {
+    color: #4267d2;
+}
+.right i[class="fa-brands fa-upwork"] {
+    color: var(--mainColor);
+}
+
+@media (max-width:991px) {
+    footer .in-first .element-important-lay .element-btn > input{
+        width: 60%;
+    }
+
+    footer .in-first .element-important-lay .element-btn > button{
+        width: 40%;
+    }
+}
+
+@media (min-width:451px) and (max-width:767px) {
+    footer .in-first {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .element-bar,
+    .element-med {
+        display: flex ;
+        width: 100%;
+        align-items: center;
+    }
+
+    .element-bar p,
+    .element-med p {
+       margin: 30px  !important;
+       font-size: 1.6rem !important;
+    }
+
+    .element-important-lay {
+        margin-left: 50% !important;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+}
+
+@media (max-width:450px) {
+    footer .in-first {
+        flex-direction: column;
+    }
+
+    .in-fin {
+        flex-direction: column;
+    }
+
+    .in-fin .right {
+        margin-top: 20px;
+    }
+
+    footer .in-first .element-important-lay .element-btn ,
+    .element-important-lay {
+        display: none;
+    }
+
 }

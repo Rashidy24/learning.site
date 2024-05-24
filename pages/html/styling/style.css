@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Bgc: #344C64;
+    --disc: #CDE8E5;
+    --main: #777;
+    --Color: #114232;
+    --Col: #1C1678;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    user-select: none;
+    background-color: var(--Bgc, #344C64);
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--Col)
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px var(--Color)
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    border-bottom: 1px var(--main, #777) solid;
+}
+
+.breadcrumb {
+    border-bottom: 1px var(--main, #777)solid;
+
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 0;
+    color: aliceblue;
+}
+
+.under-title {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--disc, #CDE8E5);
+    padding: 25px;
+    margin: 60px auto;
+    min-height: 300px;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.under-title > span {
+    text-transform: capitalize;
+    line-height: 1.7;
+    margin-top: 5px;
+    font-size: 18px;
+    color: var(--main, #777);
+}
+
+.under-title button {
+    width: 300px;
+    margin-top: 12px;
+}
+hr {
+    border-color: var(--main, #777);
+}
+
+.info {
+    padding: 25px;
+    color: aliceblue;
+    
+}
+
+.info  > span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info > p {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main, #777);
+}
+
+
+@media (max-width:450px) {
+    .info{
+        text-align: center;
+    }
+}

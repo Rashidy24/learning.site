@@ -57,6 +57,8 @@ body {
 }
 
 
+
+
 @keyframes jump {
     0% {
         transform: translate(0);
@@ -354,72 +356,6 @@ header > nav ul li > a {
     font-weight: 400
 }
 
-.footer {
-    position:absolute;
-    height: 100px;
-    width: 100%;
-    bottom: 0;
-    right: 0
-}
-
-.footer a {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    text-decoration: none;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end
-
-}
-
-.footer a  span {
-    position: relative;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: var(--Col)
-}
-
-.footer a  span::before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -70px;
-    background-color: var(--Col);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%)
-}
-
-.footer a i {
-    font-size: 2rem;
-    margin-left: 10px;
-    border: 2px var(--Col) solid;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    color: var(--mainColor);
-    transition: var(--speed, .6s);
-    -webkit-transition: var(--speed, .6s);
-    -moz-transition: var(--speed, .6s);
-    -ms-transition: var(--speed, .6s);
-    -o-transition: var(--speed, .6s)
-
-}
-
 @media (min-width:1200px) {
     .textContent {
         width: 100%;
@@ -688,7 +624,9 @@ section .false .true:hover {
 .cont-srv .two:hover span {
     color: #fff;
 }
-
+.cont-srv a {
+    text-decoration: none;
+}
 .cont-srv .two  i {
     font-size: 3rem;
     color: #fff;
@@ -845,6 +783,10 @@ section .false .true:hover {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
     margin-top: 60px;
+}
+
+.fundman a {
+    text-decoration: none;
 }
 
 @media (min-width:1400px) {
@@ -1098,6 +1040,10 @@ section .false .true:hover {
     -moz-transition: .6s;
     -ms-transition: .6s;
     -o-transition: .6s;
+}
+
+.glopal-item  .glopal button > a {
+    text-decoration: none;
 }
 
 .glopal-item  .glopal button:hover,
@@ -1837,13 +1783,7 @@ hr {
     color: var(--mainColor);
 }
 @media (min-width:768px) {
-    footer {
-        position: sticky;
-        bottom: 0;
-        z-index: -10000;
-    }
 }
-
 @media (max-width:991px) {
     footer .in-first .element-important-lay .element-btn > input{
         width: 60%;
@@ -1903,21 +1843,44 @@ hr {
 
 }
 
-.svg {
-    background-color: var(--Bgc);
-    padding: 25px;
+
+.edit {
+    width: 75% ;
+    margin: auto;
 }
 
-.svg >.svg-s {
-    width: 50%;
-
-}
-.svg >.svg-s > img {
-    width: 100%;
-}
-
-@media (max-width:767px) {
-    .svg >.svg-s {
-        width: 100%
+@media (max-width: 768px) {
+    .edit {
+        width: 100%;
     }
+    .not-carousel-acess-poll-a > div::before {
+        display: none;
+    }
+}
+
+.not-carousel-acess-poll-a {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.not-carousel-acess-poll-a > div {
+    position: relative;
+}
+
+.not-carousel-acess-poll-a > div:hover::before {
+    background: var(--Color);
+}
+
+
+.not-carousel-acess-poll-a > div::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 40px;
+    height: calc(100% + 20px);
+    background: darkcyan;
+    z-index: -1;
 }

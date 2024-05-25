@@ -18,6 +18,8 @@ html {
     --main: #777;
     --Color: #114232;
     --Col: #1C1678;
+    --box: #e7e9eb;
+    --main-padding: 60px ;
 }
 
 body {
@@ -31,11 +33,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px var(--Col)
+    -webkit-box-shadow: inset 0 0 6px var(--bgc)
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px var(--Color)
+    -webkit-box-shadow: inset 0 0 6px var(--box, #e7e9eb)
 }
 
 .center {
@@ -64,6 +66,8 @@ body {
     text-transform: uppercase;
     padding: 12px 0;
     color: aliceblue;
+    font-family: saden;
+    font-size: 40px;
 }
 
 .under-title {
@@ -74,11 +78,11 @@ body {
     margin: 60px auto;
     min-height: 300px;
     justify-content: space-evenly;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .under-title > span {
@@ -120,4 +124,156 @@ hr {
     .info{
         text-align: center;
     }
+}
+
+.example-div-container-pro {
+    background-color: var(--box, #e7e9eb);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 25px;
+}
+
+.example-div-container-pro > h1 {
+    text-transform: capitalize;
+}
+
+.example-div-container-pro > .box-example-w3-spans {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--disc);
+    padding: 25px;
+    color: var(--Col);
+}
+
+.example-div-container-pro > .box-example-w3-spans::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--Col);
+    height: 100%;
+    width: 8px;
+}
+
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(2) ,
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(14) {
+    margin-left:25px ; 
+}
+
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(3) , 
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(7) , 
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(8) ,
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(13) {
+    margin-left:50px ;
+}
+
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(5)  , 
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(10) , 
+.example-div-container-pro > .box-example-w3-spans > span:nth-child(11) {
+    margin-left:75px ;
+}
+
+@media (max-width:450px) {
+    .example-div-container-pro > .box-example-w3-spans > span {
+        margin-left: 0 !important;
+    }
+
+    .boxes-BoxesesBoxes .boxes-BoxesesBoxes-box {
+        margin: 0 12px;
+    }
+}
+
+.acess-box > a button {
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.boxes-BoxesesBoxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: var(--main-padding, 60px) 0;
+}
+
+.boxes-BoxesesBoxes  > a {
+    text-decoration: none;
+}
+
+.boxes-BoxesesBoxes .boxes-BoxesesBoxes-box {
+    background-color: var(--box);
+    color: #001;
+    text-transform: capitalize;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.boxes-BoxesesBoxes .boxes-BoxesesBoxes-box:hover {
+    background-color: #001;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #777;
+}
+
+.call {
+    background-color: #fff;
+    padding: 25px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.call ul > li:not(:first-child) {
+    margin-top: 25px;
+}
+
+.call ul > li {
+    margin-left: 12px;
+    list-style: decimal;
+}
+
+.certificate {
+    background-color: #123;
+    padding: 25px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: var(--main-padding) 0;
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.certificate span {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--main);
+}
+
+.certificate button {
+    width: 300px;
+    margin: 20px auto 0;
 }

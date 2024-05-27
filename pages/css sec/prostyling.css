@@ -158,9 +158,7 @@ body {
     width: 300px;
     margin-top: 12px;
 }
-hr {
-    border-color: var(--main, #777);
-}
+
 
 .info {
     padding: 25px;
@@ -215,27 +213,14 @@ hr {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: var(--Col);
+    background-color: #218838;
     height: 100%;
     width: 8px;
 }
 
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(2) ,
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(14) {
-    margin-left:25px ; 
-}
-
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(3) , 
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(7) , 
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(8) ,
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(13) {
-    margin-left:50px ;
-}
-
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(5)  , 
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(10) , 
-.example-div-container-pro > .box-example-w3-spans > span:nth-child(11) {
-    margin-left:75px ;
+.acess-box > a button {
+    text-transform: capitalize;
+    margin-top: 20px;
 }
 
 @media (max-width:450px) {
@@ -246,12 +231,16 @@ hr {
     .boxes-BoxesesBoxes .boxes-BoxesesBoxes-box {
         margin: 0 12px;
     }
+
+    .flex-bh {
+        flex-direction: column;
+    }
+
+    .bh {
+        width: 100% !important;
+    }
 }
 
-.acess-box > a button {
-    text-transform: capitalize;
-    margin-top: 20px;
-}
 
 .boxes-BoxesesBoxes {
     display: grid;
@@ -293,22 +282,6 @@ hr {
     border: 1px solid #777;
 }
 
-.call {
-    background-color: #fff;
-    padding: 25px;
-    font-size: 20px;
-    text-transform: capitalize;
-}
-
-.call ul > li:not(:first-child) {
-    margin-top: 25px;
-}
-
-.call ul > li {
-    margin-left: 12px;
-    list-style: decimal;
-}
-
 .certificate {
     background-color: #123;
     padding: 25px;
@@ -334,6 +307,21 @@ hr {
     margin: 20px auto 0;
 }
 
+.call {
+    background-color: var(--box);
+    padding: 25px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.call ul > li:not(:first-child) {
+    margin-top: 25px;
+}
+
+.call ul > li {
+    margin-left: 12px;
+    list-style: none;
+}
 
 .flex-bh {
     display: flex;

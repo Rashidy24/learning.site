@@ -394,6 +394,7 @@ body {
     }
     .heaader-another  ul li a {
         font-size: 1.4rem;
+        padding: 0 15px;
     }
 }
 header {
@@ -499,7 +500,7 @@ header .container  > ul > li > a {
 }
 @media (max-width:450px)  {
     header .container  > ul > li > a {
-        padding: 15px ;
+        padding: 0 10px ;
         font-size: 1.4rem;
     }
 }

@@ -14,6 +14,7 @@ window.onscroll = function () {
     })
  }
 
+
 //  var block = document.getElementById('ul'),
 //     nien = document.getElementById('l');
 //  block.onclick = function(){

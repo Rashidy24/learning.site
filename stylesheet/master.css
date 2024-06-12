@@ -2050,7 +2050,7 @@ section .true:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     background-color: var(--mainColor-alt);
     z-index: -1;
     border-radius: 0 0 50px 50px ;
@@ -2126,6 +2126,13 @@ section .true:hover {
 @media (max-width:767px) {
     .about .container .medel .left .links a {
         font-size: 1rem !important;
+    }
+    .about  .first-sec p {
+        font-size: 1.3rem;
+    }
+    .about .container .medel .left .links a {
+        padding: 5px 15px !important;
+        font-size: 1.3rem;
     }
 }
 .about .container hr {

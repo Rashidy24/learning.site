@@ -24,6 +24,9 @@ html {
     --duration: .6s;
     --section-padding:60px;
     --zero-color: #002;
+    --face-book: #4267d2;
+	--twitt: #1da1f2;
+	--insta-g: #e1306c;
 }
 body {
     font-family: 'open sans';
@@ -202,6 +205,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.palstina {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.palstina::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid;
+    border-width: 50px 100px;
+    border-color:transparent transparent transparent #dd2f2a;
+}
+.palstina > div{
+    height: 30px;
+    width: 100%;
+}
+.palstina > div.p1 {
+    background-color: #000;
+}
+.palstina > div.p2 {
+    background-color: #fff;
+}
+.palstina > div.p3 {
+    background-color: #257c23;
 }
 .heaader-another {
     display: flex;
@@ -2059,6 +2091,16 @@ section .true:hover {
     -ms-border-radius: 0 0 50px 50px ;
     -o-border-radius: 0 0 50px 50px ;
 }
+@media (max-width:767px) {
+    .about::before {
+        min-height: 450px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+}
 .about  .first-sec {
     text-align: center;
     margin-top: var(--section-padding);
@@ -2349,4 +2391,346 @@ section .true:hover {
     font-size: 1.3rem;
     color: var(--zero-color);
     font-weight: 600;
+}
+.content-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Bgc);
+    padding: var(--section-padding) 0;
+}
+
+.content-box {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 20px #fafafa;
+    height: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--mainColor-alt);
+}
+.content-box::before ,
+.content-box::after {
+    content: '';
+    position: absolute;
+    background-color: var(--mainColor-alt);
+    top: 0;
+    left: 0;
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
+    -moz-transition: var(--duration);
+    -ms-transition: var(--duration);
+    -o-transition: var(--duration);
+}
+.content-box::before {
+    width: 0;
+    height: 3px;
+}
+.content-box:hover::before {
+    width: 100%;
+}
+
+.content-box::after {
+    width: 3px;
+    height: 0;
+}
+.content-box:hover::after {
+    height: 100%;
+}
+
+
+.content-box  > .b > span {
+    font-family: saden;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--zero-color);
+    font-weight: 600;
+}
+
+.content-box  > .b > p {
+    font-family: saden;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--font);
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+
+.content-box  > button {
+    position: relative;
+    width: 150px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--mainColor);
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
+    -moz-transition: var(--duration);
+    -ms-transition: var(--duration);
+    -o-transition: var(--duration);
+    border: 1px solid #fff;
+    z-index: 1;
+}
+.content-box  > button::before , 
+.content-box  > button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    background-color: var(--mainColor-alt);
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
+    -moz-transition: var(--duration);
+    -ms-transition: var(--duration);
+    -o-transition: var(--duration);
+    z-index: -1;
+}
+.content-box  > button::before {
+    left: 0;
+}
+.content-box  > button:hover::before {
+    width: 50%;
+    height: 100%;
+}
+.content-box  > button::after {
+    right: 0;
+}
+.content-box  > button:hover::after {
+    width: 50%;
+    height: 100%;
+}
+@media (max-width:990px) {
+    .content-content {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width:450px) {
+    .content-content {
+        flex-direction: column;
+    }
+    .content-box {
+        width: 100%;
+    }
+}
+.contact-us {
+    position: relative;
+    padding: var(--section-padding) 0;
+    background-color: var(--section-Bgc);
+}
+.contact-us .container {
+    margin-top: var(--section-padding);
+    display: flex;
+    width: 100%;
+}
+
+.contact-us .container .left {
+    width: 50%;
+}
+.contact-us .container .left .top-left ,
+.contact-us .container .left .bottom-left , 
+.contact-us .container .left .footer-left {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 15px #fafafa;
+    padding: 25px;
+    display: flex;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.contact-us .container .left .top-left:hover .icon > i {
+    color: #fff;
+}
+.contact-us .container .left .top-left:hover .icon  {
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+}
+.contact-us .container .left .top-left  .icon ,
+.contact-us .container .left .bottom-left  .icon {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
+    -moz-transition: var(--duration);
+    -ms-transition: var(--duration);
+    -o-transition: var(--duration);
+}
+.contact-us .container .left .top-left  .icon i{
+    font-size: 2rem;
+    color: var(--mainColor);
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
+    -moz-transition: var(--duration);
+    -ms-transition: var(--duration);
+    -o-transition: var(--duration);
+}
+.contact-us .container .left .top-left  .details ,
+.contact-us .container .left .bottom-left .details {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-us .container .left .top-left  .details  > span:first-child ,
+.contact-us .container .left .bottom-left .details > span:first-child ,
+.contact-us .container .left .footer-left span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+}
+.contact-us .container .left .top-left  .details  > span.no-span-main {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--mainColor);
+    margin-bottom: 1.2rem;
+}
+.contact-us .container .left .top-left  .details  > a ,
+.contact-us .container .left .bottom-left .details a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--mainColor);
+}
+.contact-us .container .left .bottom-left  .icon {
+    border-color: darkorange ;
+}
+.contact-us .container .left .bottom-left  .icon  i {
+    font-size: 2rem;
+    color: darkorange;
+}
+.contact-us .container .left .footer-left  {
+    display: flex;
+    flex-direction: column;
+}
+.contact-us .container .left .footer-left .icon {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+.contact-us .container .left .footer-left .icon i {
+    font-size: 2.5rem;
+}
+.contact-us .container .left .footer-left .icon i[class="fa-brands fa-facebook-messenger"]{
+    color: var(--face-book);
+}
+.contact-us .container .left .footer-left .icon i[class="fa-brands fa-twitter"]{
+    color: var(--twitt);
+}
+.contact-us .container .left .footer-left .icon i[class="fa-brands fa-whatsapp"]{
+    color: darkgreen;
+}
+.contact-us .container .left .footer-left .icon i[class="fa-brands fa-instagram"]{
+    color: var(--insta-g);
+}
+.contact-us .container .right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contact-us .container .right form {
+    background-color: #fff;
+    box-shadow: 0 0 15px #fafafa;
+    border: 25px #fafafa solid;
+    width: 70%;
+    padding: 25px;
+    border-radius: 8px ;
+    -webkit-border-radius: 8px ;
+    -moz-border-radius: 8px ;
+    -ms-border-radius: 8px ;
+    -o-border-radius: 8px ;
+    display: flex;
+    flex-direction: column;
+}
+.contact-us .container .right form .names {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us .container .right form .names input {
+    width: 48%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #c3c3c3;
+}
+.contact-us .container .right form input ,
+.contact-us .container .right form textarea {
+    height: 40px;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #c3c3c3;
+    margin: 10px 0;
+}
+.contact-us .container .right form textarea  {
+    min-height: 40px;
+    max-height: 80px;
+}
+
+.contact-us .container .right form input[value="Send"] {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: var(--mainColor);
+    color: #fff;
+    width: 50%;
+    margin:12px auto;
+    cursor: pointer;
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
+    -moz-transition: var(--duration);
+    -ms-transition: var(--duration);
+    -o-transition: var(--duration);
+    z-index: 1;
+}
+.contact-us .container .right form input[value="Send"]:hover {
+    background-color: var(--mainColor-alt);
+}
+@media (max-width:990px) {
+    .contact-us .container {
+        flex-direction: column;
+    }
+    .contact-us .container .left ,
+    .contact-us .container .right ,
+    .contact-us .container .left .top-left ,
+    .contact-us .container .left .bottom-left , 
+    .contact-us .container .left .footer-left ,
+    .contact-us .container .right form  {
+        width: 100%;
+    }
 }

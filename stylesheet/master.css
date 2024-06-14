@@ -2866,6 +2866,9 @@ footer .bot .container .lista ul li a{
 }
 @media (max-width:767px) {
     footer .bot .container .lista ul li a {
-        font-size: 1.3rem  ;
+        font-size: 1.1rem  ;
+    }
+    footer .bot .container .lista ul li i {
+        font-size: 1.2rem;
     }
 }

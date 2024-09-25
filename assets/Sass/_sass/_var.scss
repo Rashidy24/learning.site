@@ -1,0 +1,40 @@
+// PAGE COLORS IN HTML (SCSS => => => => CSS);
+$Bgc_color: #242424;
+$Bgc_color_blind_mode: #FCFAEE;
+// .logo-color
+$Col_color: #141414;
+$Col_color_anmation: darkcyan;
+// SociaL_colors
+$face_book: #4267d2;
+$twitt: #1da1f2;
+$insta-g: #e1306c;
+$yotupe: #ff0000;
+// 
+%te_a  {
+    text-decoration: none;
+}
+%pull {
+    display: block;
+    padding: 1rem 0;
+    font: {
+        size: 1.7rem;
+        weight: 600;
+    }
+    color: $Bgc_color_blind_mode;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $Col_color;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $Bgc_color;
+    border: {
+        left: 1px solid $Bgc_color_blind_mode;
+    };
+}

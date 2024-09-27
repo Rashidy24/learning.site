@@ -1,0 +1,59 @@
+
+/* CAIRO_Font*/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+/* CAIRO-PLAY_Font*/
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Cairo:wght@200..1000&display=swap");
+a, a:focus, a:visited {
+    text-decoration: none
+}
+ul > li {
+    list-style-type: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.flexy {
+    display: flex;
+}
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.y-center {
+    align-items: center;
+}
+.x-center {
+    justify-content: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.p-30 {
+    padding: 10px 20px;
+}
+.fixed {
+    position: fixed;
+}
+.set-x {
+    inset-inline: 0;
+}
+.relative {
+    position: relative;
+}
+.absloute {
+    position: absolute;
+}
+.hidden {
+    display: none;
+}
+.f-column {
+    flex-direction: column;
+}
+

@@ -1,73 +1,140 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/Css/all.css">
-    <link rel="stylesheet" href="assets/Css/style.css">
-    <link rel="stylesheet" href="assets/Css/frames.css">
-    <link rel="stylesheet" href="assets/Css/rest.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/Stylesheet/all.min.css">
+    <link rel="stylesheet" href="assets/Stylesheet/Master.css">
+    <link rel="stylesheet" href="assets/Stylesheet/Frame.css">
+    <link rel="stylesheet" href="assets/Stylesheet/Rest.css">
+    <link rel="icon" href="assets/IMG/icon/ui-element-052.png" type="image/png"/ id="test">
 </head>
-<!-- oncontextmenu="return false" -->
 <body>
-    <header class="flexy" id="gitFunc">
-        <div class="logo flexy">
-            <i class="fa-solid fa-bullseye" id="bullseye"></i>
+    <header class="p-30 flexy between wrap fixed set-x" id="headyElement">
+        
+        <div class="logo flexy y-center">
+            <img src="assets/IMG/computer-05.png" alt="">
             <span>أكادمية المعرفة</span>
         </div>
-<div class="lista">
 
-    <ul class="flexy basic">
-        <li id="servBox">
-            <span>خدمات</span>
-            <i class="fa-solid fa-chevron-down" id="rotateIcon"></i>
-        </li>
-        <ul class="list-services absolute hidden" id="blockServ">
-            <li><a href="">إنضم للعضوية المميزة</a></li>
-            <li><a href="">كيف تدعمنا؟</a></li>
-            <li><a href="">أعمال الأعضاء</a></li>
-            <li class="nesting-exit" id="exit">غادر</li>
-        </ul>
-        <li id="servBoxX">
-            <span>خطط الدراسة</span>
-            <i class="fa-solid fa-chevron-down" id="rotateIconX"></i>
-        </li>
-        <ul class="list-services plans absolute hidden " id="blockServX">
-            <li><a href="">خطة دراسة <span>html</span></a></li>
-            <li><a href="">خطة دراسة <span>css</span></a></li>
-            <li><a href="">خطة دراسة <span>javascript</span></a></li>
-            <li><a href="">خطة دراسة <span>typescript</span></a></li>
-            <li><a href="">خطة دراسة <span>sass</span></a></li>
-            <li><a href="">خطة دراسة <span>bootstrap</span></a></li>
-            <li class="nesting-exit" id="exitX">غادر</li>
-        </ul>
-        <li id="servBoxXx">
-            <span>منوع</span>
-            <i class="fa-solid fa-chevron-down" id="rotateIconXx"></i>
-        </li>
-        <ul class="list-services absolute xdef24  hidden" id="blockServXx">
-            <li><a href="">ما الجديد</a></li>
-            <li><a href=""> أخر النشاطات في المنصة </a></li>
-            <li><a href="">سؤال وجواب</a></li>
-            <li><a href="">مقتطفات من الكتب</a></li>
-            <li class="nesting-exit" id="exitXx">غادر</li>
-        </ul>
-        <li>
-            <span>من نحن؟</span>
-        </li>
-    </ul>
-</div>
+        <div class="lista flexy y-center">
+            <ul class="flexy y-center">
+                <li class="relative" id="clickAble">خدمات<i class="fa-solid fa-chevron-down" id="iconx"></i>
+                    <ul class="absloute ul-table hidden" id="firstTable">
+                        <li><a href="#">إنضم للعضوية المميزة</a></li>
+                        <li><a href="#">كيف تدعمنا؟</a></li>
+                        <li><a href="#">قائمة المتصدرين</a></li>
+                        <li><a href="#">أعمالنا</a></li>
+                        <li class="exit"> <a href="">غادر</a></li>
+                    </ul>
+                </li>
+                <li class="relative" id="clickAblePlan">خطط الدراسة<i class="fa-solid fa-chevron-down" id="iconPlan"></i>
+                    <ul class="absloute ul-table plans hidden" id="firstTablePlan">
+                        <li><a href="#"> خطط دراسة <span>html</span></a></li>
+                        <li><a href="#"> خطط دراسة <span>css</span></a></li>
+                        <li><a href="#"> خطط دراسة <span>javascript</span></a></li>
+                        <li><a href="#"> خطط دراسة <span>typescript</span></a></li>
+                        <li><a href="#"> خطط دراسة <span>sass</span></a></li>
+                        <li class="exit-plan"> <a href="">غادر</a></li>
+                    </ul>
+                </li>
+                <li class="relative" id="clickAbleDiff">منوع<i class="fa-solid fa-chevron-down" id="iconDiff"></i>
+                    <ul class="absloute ul-table diff hidden" id="firstTableDiff">
+                        <li><a href="#">ما الجديد</a></li>
+                        <li><a href="#"> سؤال وجواب </a></li>
+                        <li><a href="#">مقتطفات من الكتب</a></li>
+                        <li><a href="#">تقييمات الكتب </a></li>
+                        <li class="exit-diff"> <a href="">غادر</a></li>
+                    </ul>
+                </li>
+                <li>من نحن؟</li>
+            </ul>
+        </div>
+
+        <nav class="lista-special">
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label for="sidebar-active" id="overlay"></label>
+            <div class="links-container fixed flexy f-column">
+                <label for="sidebar-active" class="close-sidebar-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+
+                <li class="home-link">
+                    <a href="#">خدمات</a>
+
+                    <input type="checkbox" id="inside-bar1" >
+                    <label for="inside-bar1" class="visivle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    </label>
+                    <label for="inside-bar1" id="Aoverlay" class="fixed"></label>
+
+                    <div class="another-side flexy f-column fixed">
+                        <label for="inside-bar1" class="unvisible-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg>
+                        </label>
+
+
+                        <a href="#" class="home-link">إنضم للعضوية المميزة</a>
+                        <a href="#">كيف تدعمنا؟</a>
+                        <a href="#">قائمة المتصدرين</a>
+                        <a href="#">أعمالنا</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#"> خطط الدراسة</a>
+                    <input type="checkbox" id="inside-bar2" >
+                    <label for="inside-bar2" class="visivle-btn-another">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    </label>
+                    <label for="inside-bar2" class="fixed" id="Aeoverlay"></label>
+                    <div class="plans-side fixed">
+                        <label for="inside-bar2" class="unvisible-btn-another">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg>
+                        </label>
+
+                        <a href="#"> خطط دراسة <span>html</span></a>
+                        <a href="#"> خطط دراسة <span>css</span></a>
+                        <a href="#"> خطط دراسة <span>javascript</span></a>
+                        <a href="#"> خطط دراسة <span>typescript</span></a>
+                        <a href="#"> خطط دراسة <span>sass</span></a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#"> منوع</a>
+                    <input type="checkbox" id="inside-bar3" >
+                    <label for="inside-bar3" class="visivle">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    </label>
+
+                    <label for="inside-bar3" class="fixed" id="Aeooverlay"></label>
+                    <div class="difference-side fixed">
+                        <label for="inside-bar3" class="unvisible">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg>
+                        </label>
+
+                        <a href="">ما الجديد</a>
+                        <a href="">سؤال وجواب</a>
+                        <a href=""> مقتطفات من الكتب</a>
+                        <a href="">تقييمات من الكتب </a>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">من نحن؟</a>
+                </li>
+            </div>
+        </nav>
+
     </header>
 
-    <!-- <nav id="navLeft">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-github"></i>
-    </nav> -->
 
-    <script src="assets/js/config.js"></script>
+    <script src="assets/JS/Main.js"></script>
 </body>
 </html>
-

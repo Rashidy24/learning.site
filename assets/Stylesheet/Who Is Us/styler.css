@@ -213,7 +213,7 @@ nav {
     transition-delay: 500ms;
     >ul {
         width: 500px;
-        background-color: #0f0f10;
+        /* background-color: #0f0f10; */
         padding: 10px;
         justify-content: space-between;
         align-items: center;
